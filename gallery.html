@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kyawtii</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Our Memories 📸</h1>
+    <p>Every picture holds a feeling I never want to forget.</p>
+
+    <div>
+      <img src="/IMG_20250909_141711_791.jpg">
+      <img src="/IMG_20250909_141527_187.jpg">
+      <img src="/received_934093858059895.jpeg">
+    </div>
+
+    <a href="final.html" class="btn">One Last Page 💜</a>
+  </div>
+  <div class="container page">
+    <script>
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💜";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }, 900);
+</script>
+</body>
+</html>

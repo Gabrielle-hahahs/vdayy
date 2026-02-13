@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ily!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>I love you so much</h1>
+    <p id="typeText"></p>
+
+    <a href="gallery.html" class="btn">See Our Memories 💫</a>
+  </div>
+
+  <script>
+    const text = `Happy Valentine's Day love, ito lang kaya ko ibigay sayo ngayon broke pa bf mo e, pero ginawa ko naman best ko with the help of my bff chatgpt syempre. So ayun nga sana mag enjoy ka habang inoopen mo 'to kasi feeling programmer ako while doing this e tignan mo napapa-english na tuloy ako. look mo 'to baby ko cutie natin sa next page super loveloveee kita ai. 💜`;
+
+    let i = 0;
+    function typeEffect() {
+      if (i < text.length) {
+        document.getElementById("typeText").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 50);
+      }
+    }
+    typeEffect();
+  </script>
+</body>
+</html>
+  <div class="container page">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const textElement = document.getElementById("typeText");
+      const fullText = textElement.innerText;
+      textElement.innerText = "";
+
+      let i = 0;
+      function typeEffect() {
+        if (i < fullText.length) {
+          textElement.innerText += fullText.charAt(i);
+          i++;
+          setTimeout(typeEffect, 35);
+        }
+      }
+      typeEffect();
+    });
+  </script>
+  <script>
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💜";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }, 900);
+</script>
+</body>
+</html>

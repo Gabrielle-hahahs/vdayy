@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TRIZIA MAE 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, misis ko<tag>
+      <!--Tab to edit-->
+    </tag> 💜</h1>
+    <p>
+      Hi, baby can you be my valentine? I made this website kasi wala na akong mabibigay sayo(nagpatulong kay chatgpt) I just wanna say na im so lucky to have you and iloveyousomuch ai super lovelove. Click next if yes sagot mo pero there's only one button so yun nalang click mo hehe.
+    </p>
+
+    <a href="message.html" class="btn">YES ✨</a>
+  </div>
+  <div class="container page">
+    <script>
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💜";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }, 900);
+</script>
+</body>
+</html>
